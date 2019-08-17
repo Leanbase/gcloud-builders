@@ -1,0 +1,7 @@
+---
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/python37', '.']
+
+images: ['gcr.io/$PROJECT_ID/python37']
+tags: ['leanbase-cloud-builders']
